@@ -2,73 +2,120 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Loubna Benhamza</title>
     <style> 
-        <img src="WhatsApp Image 2025-01-10 at 22.04.21 (1).jpeg" alt="Photo de profil" class="profile-pic" 
         body {
-            <div style="text-align: center; margin: 20px;">
-    <a href="Clean_CV_Template.pdf" target="_blank" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-        📄 Télécharger mon CV Académique (PDF)
-    </a>
-</div>
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
         }
 
         .cv {
-            width: 800px;
-            margin: 30px auto;
+            max-width: 900px;
+            margin: 0 auto;
             background: #fff;
             display: flex;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
 
         /* Colonne gauche */
         .left {
-            width: 30%;
-            background: #5f7f9c;
+            width: 35%;
+            background: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 30px;
         }
 
         .left h3 {
-            border-bottom: 1px solid #fff;
-            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
             margin-top: 25px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
         }
 
         .left p {
             font-size: 14px;
-            margin: 6px 0;
+            line-height: 1.6;
+            margin: 10px 0;
         }
 
         /* Colonne droite */
         .right {
-            width: 70%;
-            padding: 30px;
+            width: 65%;
+            padding: 40px;
         }
 
         .right h1 {
             margin-top: 0;
-            color: #333;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            border-bottom: 4px solid #3498db;
+            display: inline-block;
+            margin-bottom: 10px;
         }
 
         .section {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .section h3 {
-            color: #5f7f9c;
-            border-bottom: 2px solid #5f7f9c;
-            padding-bottom: 5px;
+            color: #3498db;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            display: block;
+            margin-top: 15px;
         }
 
         ul {
-            margin-top: 10px;
+            padding-left: 20px;
         }
 
         ul li {
-            margin-bottom: 6px;
+            margin-bottom: 8px;
+        }
+
+        /* Boutons */
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn-pdf { background-color: #e74c3c; }
+        .btn-kaggle { background-color: #20beff; }
+        
+        .btn:hover {
+            opacity: 0.8;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .cv { flex-direction: column; width: 100%; }
+            .left, .right { width: 100%; box-sizing: border-box; }
         }
     </style>
 </head>
@@ -76,63 +123,70 @@
 
 <div class="cv">
 
-    <!-- Colonne gauche -->
     <div class="left">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <div style="width: 120px; height: 120px; background: #95a5a6; border-radius: 50%; margin: 0 auto; border: 3px solid #3498db;"></div>
+        </div>
+
         <h3>COORDONNÉES</h3>
         <p>📞 +212 7 06 79 93 94</p>
         <p>✉️ loubnabenhamza268@gmail.com</p>
-        <p>🏠 Dr Triate Caidat Mly Abdelkader<br>Jorf Elmelha</p>
+        <p>🏠 Dr Triate Caidat Mly Abdelkader, Jorf Elmelha</p>
 
         <h3>LANGUES</h3>
-        <p>Français : Moyenne</p>
-        <p>Anglais : Moyenne</p>
+        <p><strong>Français :</strong> Moyen</p>
+        <p><strong>Anglais :</strong> Moyen</p>
 
         <h3>COMPÉTENCES</h3>
-        <p>Gestion du temps</p>
-        <p>Capacités d’organisation</p>
-        <p>Communication</p>
-        <p>Leadership</p>
-        <p>Logiciels de gestion de projet</p>
-        <p>Gestion financière</p>
+        <p>• Gestion du temps</p>
+        <p>• Organisation</p>
+        <p>• Communication</p>
+        <p>• Leadership</p>
+        <p>• Gestion de projet</p>
+        <p>• Gestion financière</p>
 
         <h3>CENTRES D’INTÉRÊT</h3>
-        <p>Lecture</p>
-        <p>Sport</p>
+        <p>• Lecture</p>
+        <p>• Sport</p>
     </div>
 
-    <!-- Colonne droite -->
     <div class="right">
         <h1>LOUBNA BENHAMZA</h1>
+        <p style="font-size: 1.2rem; color: #7f8c8d; margin-top: 0;">Étudiante en EST Salé</p>
+
+        <div class="btn-container">
+            <a href="https://www.kaggle.com/code/loubnabenhamza/notebookba3039a56e/edit" target="_blank" class="btn btn-kaggle">
+                🚀 Voir mon Projet Kaggle
+            </a>
+            <a href="#" class="btn btn-pdf">
+                📄 Télécharger CV (PDF)
+            </a>
+        </div>
 
         <div class="section">
             <h3>FORMATION</h3>
-            <p>Baccalauréat sciences économiques</p>
-            <p>1ère année EST Salé</p>
+            <p><strong>2024 - Présent :</strong> 1ère année EST Salé</p>
+            <p><strong>Baccalauréat :</strong> Sciences Économiques</p>
         </div>
 
         <div class="section">
             <h3>EXPÉRIENCE PROFESSIONNELLE</h3>
 
-            <strong>Vendeuse prêt-à-porter</strong>
+            <span class="job-title">Vendeuse prêt-à-porter</span>
             <ul>
-                <li>Disposer les articles dans les rayons</li>
-                <li>Vérifier l’étiquetage des prix</li>
-                <li>Veiller à l’approvisionnement des rayons</li>
-                <li>Accueillir et conseiller les clients</li>
-                <li>Fournir les informations demandées et faire la démonstration si nécessaire</li>
-                <li>Encaisser les paiements</li>
+                <li>Accueil, conseil et fidélisation de la clientèle.</li>
+                <li>Gestion de l’étiquetage et de l’approvisionnement des rayons.</li>
+                <li>Encaissement et gestion des flux de paiements.</li>
             </ul>
 
-            <strong>Caissière dans une pâtisserie</strong>
+            <span class="job-title">Caissière dans une pâtisserie</span>
             <ul>
-                <li>Encaissement des achats (espèces ou carte bancaire)</li>
-                <li>Accueil, orientation et réponse aux questions des clients</li>
-                <li>Utilisation de logiciels de caisse</li>
-                <li>Participation à la gestion des stocks</li>
+                <li>Traitement des transactions (espèces et cartes).</li>
+                <li>Utilisation de logiciels de gestion de caisse.</li>
+                <li>Suivi rigoureux de l'état des stocks.</li>
             </ul>
         </div>
     </div>
-
 </div>
 
 </body>
